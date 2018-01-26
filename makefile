@@ -1,9 +1,9 @@
-EXE			= rmolder
-OBJDIR		= obj
-CFLAGS		= -Wall -O3 -MMD -MP
-CSOURCES	:= $(wildcard *.c)
-OBJFILES	:= $(CSOURCES:%.c=$(OBJDIR)/%.o)
-DEPFILES	:= $(OBJFILES:.o=.d)
+EXE      = rmolder
+OBJDIR   = obj
+CFLAGS   = -Wall -O3 -MMD -MP
+CSOURCES := $(wildcard *.c)
+OBJFILES := $(CSOURCES:%.c=$(OBJDIR)/%.o)
+DEPFILES := $(OBJFILES:.o=.d)
 
 .phony: all clean
 
